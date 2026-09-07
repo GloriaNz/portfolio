@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Nziengi — Backend Developer & AI Integration</title>
+    <meta name="description" content="Portfolio de Gloria Nziengi Kimbila — Développeuse Backend Python/Flask & Intégration IA. Kinshasa, R.D. Congo.">
+    <meta name="keywords" content="Gloria Nziengi, Backend Developer, Python, Flask, AI Integration, Portfolio, Kinshasa">
+    <meta name="author" content="Gloria Nziengi Kimbila">
+    <meta property="og:title" content="Gloria Nziengi — Backend Developer & AI Integration">
+    <meta property="og:description" content="Développeuse Backend Python/Flask & Intégration API / IA — Kinshasa, R.D. Congo">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>GN<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-translate="nav_home">Accueil</a></li>
+                <li><a href="#about" data-translate="nav_about">À propos</a></li>
+                <li><a href="#skills" data-translate="nav_skills">Compétences</a></li>
+                <li><a href="#projects" data-translate="nav_projects">Projets</a></li>
+                <li><a href="#education" data-translate="nav_education">Parcours</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Gloria_NZIENGI_CV.pdf" class="btn-cv-nav" download="Gloria_NZIENGI_CV.pdf" target="_blank" rel="noopener">
+                    <i class="fas fa-file-download"></i> <span data-translate="nav_btn_cv">Mon CV</span>
+                </a>
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Français">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" width="20" height="15"> FR
+                    </button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en" aria-label="English">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="20" height="15"> EN
+                    </button>
+                </div>
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-container">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-frame">
+                    <img src="gloria-profile.jpg" alt="Gloria Nziengi Kimbila" class="hero-photo">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <div class="hero-image-badge">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-greeting" data-translate="hero_greeting">Bonjour, je suis 👋</p>
+                <h1 class="hero-name">Gloria <span class="highlight">Nziengi</span></h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-icon"><i class="fas fa-terminal"></i></span>
+                    <h2 class="hero-title" id="typingText"></h2>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description" data-translate="hero_description">
+                    Licenciée en Conception des Systèmes d'Information. Passionnée par le développement Backend Python/Flask, l'ingénierie d'APIs RESTful et l'intégration de modèles ML/IA.
+                </p>
+                <div class="hero-buttons">
+                    <a href="Gloria_NZIENGI_CV.pdf" class="btn btn-primary" download="Gloria_NZIENGI_CV.pdf" target="_blank" rel="noopener">
+                        <i class="fas fa-download"></i> <span data-translate="hero_btn_cv">Télécharger mon CV</span>
+                    </a>
+                    <a href="https://wa.me/243997924970" class="btn btn-whatsapp-hero" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> <span data-translate="hero_btn_whatsapp">WhatsApp</span>
+                    </a>
+                    <a href="mailto:gnziengi@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> <span>Email</span>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/GloriaNz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Gloria%20Nziengi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gnziengi@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/243997924970" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about_title">À propos de moi</h2>
+            <div class="section-line"></div>
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="about-image-card">
+                        <img src="gloria-profile.jpg" alt="Gloria Nziengi">
+                        <div class="about-card-overlay"></div>
+                    </div>
+                    <div class="about-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kinshasa, R.D. Congo</span>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <h3 class="about-greeting" data-translate="about_greeting">
+                        Bonjour ! Je suis <span class="highlight">Gloria Nziengi</span>
+                    </h3>
+                    <p class="about-bio" data-translate="about_bio_1">
+                        Licenciée en Conception des Systèmes d'Information et apprenante certifiée en Développement d'Intelligence Artificielle (Simplon / Kadea Academy). Passionnée par la conception d'architectures applicatives modernes, le développement Backend Python/Flask, l'ingénierie d'APIs RESTful, la modélisation de bases de données relationnelles (PostgreSQL/SQLite) et l'intégration de modèles ML/IA.
+                    </p>
+                    <p class="about-bio" data-translate="about_bio_2">
+                        Rigoureuse, autonome et organisée, je conçois des solutions backend robustes et des pipelines de données efficaces pour des applications web modernes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label" data-translate="stat_certifications">Certifications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label" data-translate="stat_projects">Projets réalisés</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label" data-translate="stat_languages">Langues</div>
+                        </div>
+                    </div>
+                    <div class="about-interests">
+                        <h4 data-translate="about_interests_title"><i class="fas fa-music"></i> Centres d'intérêt</h4>
+                        <p data-translate="about_interests">Musique, chant et apprentissage du piano 🎹</p>
+                    </div>
+                    <div class="about-cv-actions">
+                        <a href="Gloria_NZIENGI_CV.pdf" class="btn btn-primary" download="Gloria_NZIENGI_CV.pdf" target="_blank" rel="noopener">
+                            <i class="fas fa-download"></i> <span data-translate="about_btn_cv">Télécharger le CV (PDF)</span>
+                        </a>
+                        <a href="Gloria_NZIENGI_CV.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+                            <i class="fas fa-eye"></i> <span data-translate="about_btn_view_cv">Visualiser en ligne</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills_title">Compétences Techniques</h2>
+            <div class="section-line"></div>
+            <div class="skills-grid">
+                <!-- Backend & Frameworks -->
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3 data-translate="skill_cat_backend">Backend & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">JSON</span>
+                        <span class="skill-tag">YAML</span>
+                        <span class="skill-tag">API Versioning</span>
+                    </div>
+                </div>
+                <!-- Databases & ORM -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3 data-translate="skill_cat_db">Bases de Données & ORM</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">UML</span>
+                        <span class="skill-tag">Méthode Merise</span>
+                    </div>
+                </div>
+                <!-- AI, ML & Data -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-translate="skill_cat_ai">IA, ML & Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ML/AI Integration</span>
+                        <span class="skill-tag">Fine-Tuning</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Data Parsing</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Serialization</span>
+                    </div>
+                </div>
+                <!-- DevOps & Tools -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 data-translate="skill_cat_devops">DevOps, Cloud & Outils</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag soft" data-translate="soft_analytical">Esprit d'analyse</span>
+                        <span class="skill-tag soft" data-translate="soft_autonomy">Autonomie</span>
+                        <span class="skill-tag soft" data-translate="soft_organization">Organisation rigoureuse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects_title">Projets Vedettes</h2>
+            <div class="section-line"></div>
+            <div class="projects-grid">
+                <!-- Project 1: CVBoost -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GloriaNz" target="_blank" rel="noopener" aria-label="Code source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">CVBoost</h3>
+                    <p class="project-subtitle" data-translate="project1_subtitle">Plateforme Web de Valorisation de CV</p>
+                    <p class="project-description" data-translate="project1_desc">
+                        Application web de gestion automatisée et valorisation de résumés professionnels. Endpoints REST pour parsing de données, upload sécurisé, traitement d'informations et suivi des profils.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">#Python</span>
+                        <span class="tag">#Flask</span>
+                        <span class="tag">#SQLite</span>
+                        <span class="tag">#SQLAlchemy</span>
+                        <span class="tag">#REST_API</span>
+                    </div>
+                    <span class="project-year">2026</span>
+                </div>
+                <!-- Project 2: IA & Data Engineering -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GloriaNz" target="_blank" rel="noopener" aria-label="Code source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name" data-translate="project2_name">Intégration IA & Data Engineering</h3>
+                    <p class="project-subtitle">Kadea Academy</p>
+                    <p class="project-description" data-translate="project2_desc">
+                        Déploiement et fine-tuning de modèles légers sur Hugging Face, création de pipelines de traitement JSON/YAML/CSV pour l'ingénierie de données.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">#HuggingFace</span>
+                        <span class="tag">#Python</span>
+                        <span class="tag">#Fine-Tuning</span>
+                        <span class="tag">#ETL</span>
+                        <span class="tag">#JSON</span>
+                    </div>
+                    <span class="project-year">2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION & CERTIFICATIONS ========== -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title" data-translate="education_title">Parcours & Certifications</h2>
+            <div class="section-line"></div>
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-translate="edu_date_1">Jan. 2026 — Présent</span>
+                        <h3 data-translate="edu_title_1">Certification en Développement IA</h3>
+                        <h4>Simplon & Kadea Academy</h4>
+                        <p data-translate="edu_desc_1">Machine Learning, Computer Vision, Intégration d'APIs IA.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">#MachineLearning</span>
+                            <span class="tag">#ComputerVision</span>
+                            <span class="tag">#AI_API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker cert">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 data-translate="edu_title_2">AWS Cloud Practitioner (AWS Re/Start)</h3>
+                        <h4>AWS / Orange Digital Center — Kinshasa</h4>
+                        <p data-translate="edu_desc_2">Certification officielle AWS Cloud Practitioner validant les fondamentaux du Cloud Computing.</p>
+                        <div class="timeline-badge">
+                            <i class="fas fa-certificate"></i> <span data-translate="edu_badge_certified">Certifiée</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2024</span>
+                        <h3 data-translate="edu_title_3">Licence en Conception des Systèmes d'Information</h3>
+                        <h4 data-translate="edu_school_3">Université William Booth — Kinshasa</h4>
+                        <p data-translate="edu_desc_3">Conception de systèmes d'information, modélisation UML, bases de données relationnelles et architecture logicielle.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3 data-translate="edu_title_4">African Girls Can Code Initiative (AGCCI)</h3>
+                        <h4 data-translate="edu_school_4">ONU Femmes / UN Women</h4>
+                        <p data-translate="edu_desc_4">Programme panafricain de formation et d'autonomisation des jeunes femmes africaines dans les TIC et le codage.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 — 2022</span>
+                        <h3 data-translate="edu_title_5">Graduat en Informatique de Gestion</h3>
+                        <h4 data-translate="edu_school_5">Université William Booth — Kinshasa</h4>
+                        <p data-translate="edu_desc_5">Fondamentaux de l'informatique, algorithmique, programmation et gestion des systèmes d'information.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- References / Recommandations from CV -->
+            <div class="references-block">
+                <h3 class="references-title" data-translate="refs_title"><i class="fas fa-user-check"></i> Références professionnelles</h3>
+                <div class="references-grid">
+                    <div class="reference-card">
+                        <div class="ref-avatar"><i class="fas fa-user-tie"></i></div>
+                        <div class="ref-info">
+                            <h4>Uriel Mbemba</h4>
+                            <p class="ref-role" data-translate="ref_1_role">Coach Soft Skills, Kadea Academy</p>
+                            <a href="mailto:urielmbemba@gmail.com" class="ref-email"><i class="fas fa-envelope"></i> urielmbemba@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="reference-card">
+                        <div class="ref-avatar"><i class="fas fa-laptop-code"></i></div>
+                        <div class="ref-info">
+                            <h4>Herdys</h4>
+                            <p class="ref-role" data-translate="ref_2_role">Coach Dev IA, Kadea Academy</p>
+                            <a href="mailto:herdy@kadea.co" class="ref-email"><i class="fas fa-envelope"></i> herdy@kadea.co</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Me Contacter</h2>
+            <div class="section-line"></div>
+            <p class="contact-intro" data-translate="contact_intro">
+                Vous avez un projet, une opportunité ou simplement envie d'échanger ? N'hésitez pas à me contacter !
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:gnziengi@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>gnziengi@gmail.com</p>
+                </a>
+                <a href="https://wa.me/243997924970" target="_blank" rel="noopener" class="contact-card whatsapp">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>+243 997 924 970</p>
+                </a>
+                <a href="https://linkedin.com/in/Gloria%20Nziengi" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Gloria Nziengi</p>
+                </a>
+                <a href="https://github.com/GloriaNz" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>GloriaNz</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>GN<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text" data-translate="footer_text">
+                    Conçu avec <span class="heart">❤</span> par Gloria Nziengi — Kinshasa, R.D. Congo
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/GloriaNz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Gloria%20Nziengi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gnziengi@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/243997924970" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 Gloria Nziengi Kimbila. <span data-translate="footer_rights">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/243997924970" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
